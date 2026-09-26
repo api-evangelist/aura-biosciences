@@ -1,23 +1,52 @@
 aid: aura-biosciences
+
 name: Aura Biosciences
-description: 'Aura Biosciences is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aura Biosciences is a biotechnology company focused on developing innovative cell‑based therapies that precisely target disease‑causing cells while sparing healthy tissue. Leveraging its proprietary platform, the company aims to create next‑generation treatments for a range of serious conditions, advancing both research and clinical development to bring transformative therapies to patients.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aura-biosciences/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
+- Biotechnology
+- Therapeutics
+- Cell Therapy
+- Clinical Development
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://forgeglobal.com/aura-biosciences_stock/
+
+  - type: Hosts
+    url: hosts/aura-biosciences-hosts.yml
+  - type: Vendors
+    url: vendors/aura-biosciences-vendors.yml
+  - type: DomainSecurity
+    url: security/aura-biosciences-domain-security.yml
+  - type: Website
+    url: https://forgeglobal.com/aura-biosciences_stock/
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: minimal
+  artifacts_added: 2
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
